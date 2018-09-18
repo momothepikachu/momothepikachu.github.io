@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116872384-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116872384-1');
+  </script>
+<!-- CSS -->
+	<title> Momoland | Front-End Developer Momo Rao</title>
+    <!--below asks for the most up-to-date browser?-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <!--below is for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta descriptions and meta title for google search results -->
+    <meta name="description" content="Welcome to Front-End Developer Momo Rao's personal website and blog" />
+    <meta name="keywords" content="Momo Monica Rao, html5, bootstrap, css3, mobile first, responsive" />
+    <meta name="author" content="Momo Rao" />
+    <!-- ======== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+<!--     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+
+</head>
+<body>
+	<div class="container">
+    <div id="fullscreen-banner">
+      <div class="row justify-content-between" style="display: flex;" id="header">
+        <div class="col-xs-5">       
+          <ul class="nav text-left">
+            <div id="dropBtn" class="menu-icon" onclick="menuIconAni(this); dropDown()">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div id="myDropdown" class="menu-list">   
+              <li><a href="contact.html">About</a></li>                   
+              <li class="active"><a href="index.html"><span>Home</span></a></li>
+              <li><a href="https://medium.com/@monicaxrao">Blog</a></li>
+            </div> 
+          </ul>          
+        </div>
+        <div class="col-xs-7 text-uppercase text-right">
+          <h1 class="textthin titlesuper">Momo Rao</h1>
+          <p class="sub-title">Front-end Ninja<img class="logo" src="images/logo.png"></p>
+        </div>
+      </div>
+	    <div class="row">
+        <header class="site-header">
+          <img id="cover-img" alt="a cover banner" src="images/banner.jpg">
+          <div>
+            <h1>Hello, I'm Momo</h1>
+<!--                 <p>Welcome to my portfolio website<br />Want to check out my work?</p> -->
+            <a href="#Featured" class="button">See My Projects</a>
+          </div>                      
+        </header>
+	    </div>
+    </div>  
+      <div id="Featured" class="row feature">
+        <div class="col-xs-12 animated fadeInUp wow">
+          <h2 class="text-muted">Featured Work</h2>
+        </div>
+      </div>
+      <div id="featured-works" class="row text-center animated fadeInUp feature wow">
+        <div class="col-md-6 google">
+          <img src="images/google.png" class="img-responsive" alt="GrowWithGoogle certificate" data-toggle="modal" data-target="#project1">
+          <h3>2018 Grow-with-Google Scholarship Winner</h3>
+        </div>
+        <div class="col-md-6 google">
+          <img src="images/myreads.PNG" class="img-responsive" alt="picture of myreads app" data-toggle="modal" data-target="#project2">
+          <h3>MyReads--A book lending app</h3>
+          <p><a href="https://momothepikachu.github.io/MyReads-React/">Link to project</a></p>
+        </div>
+      </div>
+      <div class="row text-center feature animated fadeInUp wow">
+        <div class="col-md-6 google">
+          <img src="images/reviewsmobile.png" class="img-responsive" alt="a pic of restaurant review app" data-toggle="modal" data-target="#project3">
+          <h3>Restaurant Reviews--A restaurant review app</h3>
+          <p><a href="https://momothepikachu.github.io/Restaurant-Review-App-Stage-1/">Link to project</a></p>
+        </div>
+        <div class="col-md-6 google">
+          <img src="images/memgame.PNG" class="img-responsive" alt="a pic of memory game" data-toggle="modal" data-target="#project4">
+          <h3>Memory Game</h3>
+          <p><a href="https://momothepikachu.github.io/memory-game/">Link to project</a></p>
+        </div>
+      </div>
+      <div id="footer" class="row">
+        <div class="col-xs-12 text-center">
+          <p><i class="far fa-copyright"></i> Copyright 2018</p>        
+          <p>Designed by <i class="fas fa-heart"></i> Momo Rao <i class="fas fa-heart"></i></p>
+          <p class="icons">
+            <a aria-label="linkedin" href="https://www.linkedin.com/in/xiao-rao-582079115/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a aria-label="github" href="https://github.com/momothepikachu" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+            <a aria-label="facebook" href="https://www.facebook.com/xiao.rao.98" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+          </p>          
+        </div>
+      </div>          
+	</div>
+  <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">2018 Grow-with-Google Challenge Scholarship</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/google.png" class="img-responsive" alt="GrowWithGoogle certificate" data-toggle="modal" data-target="#project1">
+                    <p style="margin: 10px 20px 0px 20px;">
+                      Received Udacity's 2018 Grow-with-Google-Challenge Scholarship for the Front-End Developer track, 1.5% acceptance rate 
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">MyReads--A book lending app</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/myreads.gif" class="img-responsive" alt="a gif of myreads app" data-toggle="modal" data-target="#project2">
+                    <p style="margin: 10px 20px 0px 20px;">
+                      In the MyReads project, I created a bookshelf app that allows users to select and categorize books that they have read, are currently reading, or want to read. This is the final assessment project for Udacity's React Fundamentals course.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Restaurant Reviews--A restaurant review app</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/reviews.PNG" class="img-responsive" alt="a gif of restaurant review app" data-toggle="modal" data-target="#project3">
+                    <p style="margin: 10px 20px 0px 20px;">
+                      For this Restaurant Reviews project, I will incrementally convert a static webpage to a mobile-ready web application. In Stage One, I took a static design that lacked accessibility and converted the design to be responsive on different sized displays and accessible for screen reader use. I also added a service worker to begin the process of creating a seamless offline experience for my users.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Memory Game</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/finishgame.gif" class="img-responsive" alt="gif of memory game" data-toggle="modal" data-target="#project4">
+                    <p style="margin: 10px 20px 0px 20px;">
+                      The game board consists of sixteen "cards" arranged in a grid. The deck is made up of eight different pairs of cards, each with different symbols on one side. The cards are arranged randomly on the grid with the symbol face down. The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>        
+<!-- JavaScript/jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="js/all.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+</body>
+</html>

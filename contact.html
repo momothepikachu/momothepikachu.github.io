@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116872384-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116872384-1');
+  </script>
+
+  <!-- CSS -->
+	<title>Welcome to Momoland</title>
+    <!--below asks for the most up-to-date browser?-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <!--below is for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Monica Rao's personal website" />
+    <meta name="keywords" content="Momo Monica Rao, html5, bootstrap, css3, mobile first, responsive" />
+    <meta name="author" content="Momo Rao" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+<!--     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+
+</head>
+<body>
+	<div class="container">
+    <div class="row justify-content-between" style="display: flex;" id="header">
+      <div class="col-xs-5">       
+        <ul class="nav text-left">
+          <div id="dropBtn" class="menu-icon" onclick="menuIconAni(this); dropDown()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div id="myDropdown" class="menu-list">   
+            <li class="active"><a href="contact.html">About</a></li>     
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="https://medium.com/@monicaxrao">Blog</a></li>
+          </div> 
+        </ul>          
+      </div>
+      <div class="col-xs-7 text-uppercase text-right">
+        <h1 class="textthin titlesuper">Momo Rao</h1>
+        <p class="sub-title">Front-end Ninja<img class="logo" src="images/logo.png"></p>
+      </div>
+    </div>
+    <div class="row site-header">
+        <img src="images/blossom.jpg" class="img-responsive cover" alt="a cover">
+        <hr style="border: none; border-bottom: 2px solid #BCBBBB;">        
+    </div>    
+	  <div class="row">
+      <div class="owl-carousel owl-theme animated pulse feature">
+          <div class="item"><img alt="a cover banner" src="images/google.png"></div>
+          <div class="item"><img alt="a cover banner" src="images/nara.JPG"></div>
+          <div class="item"><img alt="a cover banner" src="images/fujisan.JPG"></div>
+          <div class="item"><img alt="a cover banner" src="images/Toby.jpg"></div>
+          <div class="item"><img alt="a cover banner" src="images/hallowin.jpg"></div>
+          <div class="item"><img alt="a cover banner" src="images/lab.jpg"></div>
+          <div class="item"><img alt="a cover banner" src="images/mason.JPG"></div>
+          <div class="item"><img alt="a cover banner" src="images/snake.jpg"></div>
+      </div>    
+	  </div>
+    <div class="row">
+      <div id="contact-p" class="col-xs-12 animated fadeInUp wow">
+        <h2 style="margin-bottom: 10px;" class="text-muted">ABOUT ME</h2>
+        <p>Hello! I’m Momo. Welcome to my personal website and blog:D</p>
+        <p>I started learning front-end web development with ZERO former experience. I want to use this blog to record my learning progress and share them with others.</p>
+        <p>Besides web development, I’m also passionate about food, travel and photography.</p>
+        <p>Contact me: monicaxrao@gmail.com</p>
+        <p>Or you can click one of the social media icons at the bottom of this page:)</p>
+      </div>
+    </div>
+    <div id="footer" class="row">
+        <div class="col-xs-12 text-center">
+          <p><i class="far fa-copyright"></i> Copyright 2018</p>        
+          <p>Designed by <i class="fas fa-heart"></i> Momo Rao <i class="fas fa-heart"></i></p>
+          <p class="icons">
+            <a href="https://www.linkedin.com/in/xiao-rao-582079115/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="https://github.com/momothepikachu" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+            <a href="https://www.facebook.com/xiao.rao.98" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+          </p>          
+        </div>
+      </div>          
+  </div>
+<!-- JavaScript/jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="js/all.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+  })
+</script>
+</body>
+</html>
