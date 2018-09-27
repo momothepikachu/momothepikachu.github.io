@@ -1,4 +1,4 @@
-# www.momorao.com
+# Momo's personal website
 
 ![screenshot](images/mysite.gif)
 
